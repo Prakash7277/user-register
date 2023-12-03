@@ -25,8 +25,8 @@ export class ShowuserComponent implements OnInit {
       })
   }
 
-  getById(id:number){
-    this.router.navigate(['/updateuser'])
-    this.userService.getById(id);
-  }
+  // getUserById(id:number){
+  //   this.router.navigate(['/updateuser'])
+  //   this.userService.getUserById(id);
+  // }
 }

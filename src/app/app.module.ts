@@ -12,9 +12,11 @@ import { UserService } from './user.service';
 import { UpdateuserComponent } from './updateuser/updateuser.component';
 
 const routes: Routes=[
+  {path:"",redirectTo:"/home",pathMatch:'full'},
   {path:"adduser",component:AddUserComponent},
   {path:"showuser",component:ShowuserComponent},
-  {path:"updateuser",component:UpdateuserComponent}
+  // {path:"updateuser",component:UpdateuserComponent}
+  {path:"updateuser/:id",component:UpdateuserComponent}
 ]
 
 @NgModule({
